@@ -1,0 +1,32 @@
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: burlywood;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+.showcase-row {
+    margin-top: 24px;
+    min-height: 48px;
+    align-items: self-end;
+}
+
+.main-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.showcase-item {
+    width: 50px;
+    align-self: center;
+}
+
+.showcase-item-price {
+    margin-left: 8px;
+    text-align: center;
+}

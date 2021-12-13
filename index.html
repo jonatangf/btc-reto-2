@@ -14,18 +14,80 @@
 <header>
     <h1>Hello world!</h1>
 </header>
-<div class="container">
+<div class="container main-section">
     <div class="row">
         <div class="col-12 col-sm-8">
             <h2>Artículos</h2>
+            <div class="container-fluid showcase">
+                <div class="row showcase-row">
+                    <div class="col-sm-1">
+                        <div class="showcase-item-price">1,32€</div>
+                        <img id="a1" src="img/vegetables.png" class="showcase-item" draggable="true"
+                             ondragstart="drag(event)">
+                    </div>
+                    <div id="a2" class="col-sm-1">a2</div>
+                    <div class="col-sm-1">a3</div>
+                    <div class="col-sm-1">a4</div>
+                    <div class="col-sm-1">a5</div>
+                    <div class="col-sm-1">a6</div>
+                    <div class="col-sm-1">a7</div>
+                    <div class="col-sm-1">a8</div>
+                    <div class="col-sm-1">a9</div>
+                    <div class="col-sm-1">a10</div>
+                    <div class="col-sm-1">a11</div>
+                    <div class="col-sm-1">a12</div>
+                </div>
+                <div class="row item">
+                    <img class="col-12" src="img/single_showcase.png" alt="">
+                </div>
+                <div class="row showcase-row">
+                    <div class="col-sm-1">a1</div>
+                    <div class="col-sm-1">a2</div>
+                    <div class="col-sm-1">a3</div>
+                    <div class="col-sm-1">a4</div>
+                    <div class="col-sm-1">a5</div>
+                    <div class="col-sm-1">a6</div>
+                    <div class="col-sm-1">a7</div>
+                    <div class="col-sm-1">a8</div>
+                    <div class="col-sm-1">a9</div>
+                    <div class="col-sm-1">a10</div>
+                    <div class="col-sm-1">a11</div>
+                    <div class="col-sm-1">a12</div>
+                </div>
+                <div class="row item">
+                    <img class="col-12" src="img/single_showcase.png" alt="">
+                </div>
+                <div class="row showcase-row">
+                    <div class="col-sm-1">a1</div>
+                    <div class="col-sm-1">a2</div>
+                    <div class="col-sm-1">a3</div>
+                    <div class="col-sm-1">a4</div>
+                    <div class="col-sm-1">a5</div>
+                    <div class="col-sm-1">a6</div>
+                    <div class="col-sm-1">a7</div>
+                    <div class="col-sm-1">a8</div>
+                    <div class="col-sm-1">a9</div>
+                    <div class="col-sm-1">a10</div>
+                    <div class="col-sm-1">a11</div>
+                    <div class="col-sm-1">a12</div>
+                </div>
+                <div class="row item">
+                    <img class="col-12" src="img/single_showcase.png" alt="">
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-sm-4">
+        <div class="col-12 col-sm-4" ondrop="dropOnCart(event)" ondragover="allowDrop(event)"
+             style="background-color: antiquewhite">
             <h2>Tu cesta</h2>
+            <div id="cart" class="container-fluid"></div>
         </div>
     </div>
 </div>
 <footer>
-    Footer
+    <div class="container">
+        Footer
+    </div>
 </footer>
+<script src="js/drag_and_drop.js"></script>
 </body>
 </html>
