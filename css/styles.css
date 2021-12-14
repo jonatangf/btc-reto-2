@@ -30,3 +30,23 @@ footer {
     margin-left: 8px;
     text-align: center;
 }
+
+.cart-focused {
+    border: 2px solid #ff0000;
+}
+
+.cart-unfocused {
+    border: 0;
+}
+
+#cart {
+    min-height: 200px;
+}
+
+#total-price {
+    text-align: right;
+}
+
+.showcase-item-name {
+
+}

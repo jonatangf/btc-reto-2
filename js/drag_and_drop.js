@@ -1,32 +1,45 @@
-function allowDrop(ev) {
-    console.log("allowDrop has been called");
+const allowDrop = (ev) => {
     ev.preventDefault();
 }
 
-function drag(ev) {
-    console.log("drag has been called");
-    console.log(JSON.stringify(ev));
-    ev.dataTransfer.setData("text", ev.target.id);
+const drag = (ev) => {
+    ev.dataTransfer.setData("id", ev.target.id);
+    document.getElementById("cart-container").className = "cart-focused col-sm-4";
 }
 
-function dropOnCart(ev) {
+const dropOnCart = (ev) => {
     console.log("drop has been called");
     ev.preventDefault();
-    let data = ev.dataTransfer.getData("text");
-    console.log('The event is: ' + JSON.stringify(ev));
+    let elementId = ev.dataTransfer.getData("id");
+    let element = document.getElementById(elementId);
+    let parentElement = element.parentElement
+
+    let elementPrice = parentElement.getElementsByClassName("showcase-item-price").item(0).textContent;
+    let elementName = parentElement.getElementsByClassName("showcase-item-name").item(0).textContent;
 
     let articleNameElement = document.createElement("div");
     articleNameElement.className = "col-sm-8";
-    articleNameElement.textContent = "Article name";
+    articleNameElement.textContent = elementName;
 
     let priceElement = document.createElement("div");
-    priceElement.className = "col-sm-4";
-    priceElement.textContent = "Price";
+    priceElement.className = "col-sm-2";
+    priceElement.textContent = elementPrice;
+
+    let priceCurrency = document.createElement("div");
+    priceCurrency.className = "col-sm-2";
+    priceCurrency.textContent = "€";
 
     let cartElement = document.createElement("div");
     cartElement.className = "row";
     cartElement.appendChild(articleNameElement);
     cartElement.appendChild(priceElement);
+    cartElement.appendChild(priceCurrency);
+
+    let total_elements = parseInt(document.getElementById("total-elements").textContent) + 1;
+    document.getElementById("total-elements").textContent = total_elements.toString();
+
+    document.getElementById("total-price").textContent = (parseFloat(document.getElementById("total-price").textContent) + parseFloat(elementPrice)).toFixed(2);
 
     document.getElementById("cart").appendChild(cartElement);
+    document.getElementById("cart-container").className = "cart-unfocused col-sm-4";
 }
