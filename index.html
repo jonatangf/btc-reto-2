@@ -23,7 +23,7 @@
                     <div class="col-sm-1">
                         <div class="showcase-item-price">1,32€</div>
                         <img id="a1" src="img/vegetables.png" class="showcase-item" draggable="true"
-                             ondragstart="drag(event)" alt="">
+                             ondragstart="dragArticle(event)" alt="">
                         <div class="showcase-item-name" hidden=true>Tomate</div>
                     </div>
                     <div id="a2" class="col-sm-1">a2</div>
@@ -77,9 +77,18 @@
                 </div>
             </div>
         </div>
-        <div id="cart-container" class="col-sm-4" ondrop="dropOnCart(event)" ondragover="allowDrop(event)">
+        <div id="cart-container" class="col-sm-4" ondrop="dropArticleOnCart(event)" ondragover="allowDrop(event)">
             <h2>Tu cesta</h2>
-            <div id="cart" class="container-fluid"></div>
+            <div id="cart" class="container-fluid">
+                <div class="container-fluid col-12">
+                    <div class="row">
+                        <h5 class="col-sm-4">Artículo</h5>
+                        <h5 class="col-sm-4">Cantidad</h5>
+                        <h5 class="col-sm-2">P/U</h5>
+                        <h5 class="col-sm-2">Total</h5>
+                    </div>
+                </div>
+            </div>
             <div class="cart-summary">
                 <h4>Resumen</h4>
                 <div class="container-fluid">
