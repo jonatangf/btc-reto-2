@@ -1,7 +1,6 @@
 header {
     background-color: #f1f1f1;
     padding: 20px;
-    text-align: center;
 }
 
 footer {
@@ -21,14 +20,16 @@ footer {
     margin-bottom: 20px;
 }
 
-.showcase-item {
-    width: 50px;
+.showcase-item-price {
     align-self: center;
+    align-items: center;
+    text-align: center;
 }
 
-.showcase-item-price {
-    margin-left: 8px;
-    text-align: center;
+.showcase-item-image {
+    width: 50px;
+    align-self: center;
+    align-items: center;
 }
 
 .cart-focused {
@@ -43,10 +44,6 @@ footer {
     min-height: 200px;
 }
 
-#total-price {
-    text-align: right;
-}
-
-.showcase-item-name {
-
+.total-label {
+    text-align: left;
 }
