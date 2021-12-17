@@ -11,21 +11,21 @@ const Shelf = function () {
 
 const shelf1 = new Shelf();
 shelf1.articles.push(new Article("Tomate", 0.44, "img/articles/tomato.png"));
-shelf1.articles.push(new Article("Cola", 0.98, "img/articles/coke.png"));
+shelf1.articles.push(new Article("Coca Cola", 0.98, "img/articles/coke.png"));
 shelf1.articles.push(new Article("Manzana", 0.37, "img/articles/apple.png"));
 shelf1.articles.push(new Article("Cebolla", 1.21, "img/articles/onion.png"));
 
 const shelf2 = new Shelf();
 shelf2.articles.push(new Article("Sandía", 1.45, "img/articles/watermelon.png"));
-shelf2.articles.push(new Article("Orange", 1.21, "img/vegetables.png"));
-shelf2.articles.push(new Article("Letuce", 1.45, "img/vegetables.png"));
-shelf2.articles.push(new Article("Onion", 1.21, "img/vegetables.png"));
+shelf2.articles.push(new Article("Agua", 0.8, "img/articles/water.png"));
+shelf2.articles.push(new Article("Leche almendras", 1.45, "img/articles/almond_milk.png"));
+shelf2.articles.push(new Article("Calabaza", 1.89, "img/articles/pumpkin.png"));
 
 const shelf3 = new Shelf();
-shelf3.articles.push(new Article("Tomate", 1.45, "img/vegetables.png"));
-shelf3.articles.push(new Article("Orange", 1.21, "img/vegetables.png"));
-shelf3.articles.push(new Article("Letuce", 1.45, "img/vegetables.png"));
-shelf3.articles.push(new Article("Onion", 1.21, "img/vegetables.png"));
+shelf3.articles.push(new Article("Tomate", 3.45, "img/articles/chocolate_syrope.png"));
+shelf3.articles.push(new Article("Galletas", 1.21, "img/articles/cookies.png"));
+shelf3.articles.push(new Article("Papilla zanahoria", 2.95, "img/articles/carrot_papilla.png"));
+shelf3.articles.push(new Article("Lays", 1.15, "img/articles/lays.png"));
 
 const showcase = [shelf1, shelf2, shelf3];
 
