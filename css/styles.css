@@ -47,3 +47,15 @@ footer {
 .total-label {
     text-align: left;
 }
+
+.return-product-unfocused {
+    margin-top: 8px;
+    color: white;
+    background-color: indianred;
+}
+
+.return-product-unfocused {
+    margin-top: 8px;
+    color: white;
+    background-color: darkred;
+}

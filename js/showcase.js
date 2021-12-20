@@ -22,7 +22,7 @@ shelf2.articles.push(new Article("Leche almendras", 1.45, "img/articles/almond_m
 shelf2.articles.push(new Article("Calabaza", 1.89, "img/articles/pumpkin.png"));
 
 const shelf3 = new Shelf();
-shelf3.articles.push(new Article("Tomate", 3.45, "img/articles/chocolate_syrope.png"));
+shelf3.articles.push(new Article("Sirope", 3.45, "img/articles/chocolate_syrope.png"));
 shelf3.articles.push(new Article("Galletas", 1.21, "img/articles/cookies.png"));
 shelf3.articles.push(new Article("Papilla zanahoria", 2.95, "img/articles/carrot_papilla.png"));
 shelf3.articles.push(new Article("Lays", 1.15, "img/articles/lays.png"));
@@ -46,7 +46,7 @@ const initializeShowcase = () => {
             let calculatedArticleId = "a" + articleId++;
 
             articleDiv.innerHTML = "<img id=\"" + calculatedArticleId + "\" src=\"" + article.image + "\" " +
-                "class=\"row mx-auto showcase-item-image\" draggable=\"true\" onDragStart=\"dragArticle(event)\" alt=\"\">";
+                "class=\"row mx-auto showcase-item-image\" draggable=\"true\" onDragStart=\"dragShowcaseArticle(event)\" alt=\"\">";
 
             const articlePrice = document.createElement("div");
             articlePrice.className = "showcase-item-price";
@@ -57,6 +57,7 @@ const initializeShowcase = () => {
             articleName.hidden = true;
             articleName.innerText = article.name;
 
+            articleDiv.id = calculatedArticleId;
             articleDiv.prepend(articlePrice);
             articleDiv.appendChild(articleName);
 
