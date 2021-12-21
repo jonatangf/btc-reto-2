@@ -45,10 +45,7 @@ const dropArticleOnCart = (ev) => {
     refreshCart();
 }
 
-const dropArticleOnGarbage = (ev) => {
-    console.log('dropArticleOnGarbage method executed and ev is: ' + JSON.stringify(ev));
-
+document.getElementById("clear-cart").onclick = (event) => {
+    while(cart.length > 0) cart.pop();
     refreshCart();
 }
-
-

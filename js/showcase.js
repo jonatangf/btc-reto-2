@@ -57,7 +57,7 @@ const initializeShowcase = () => {
             articleName.hidden = true;
             articleName.innerText = article.name;
 
-            articleDiv.id = calculatedArticleId;
+            articleDiv.id = "ad_" + calculatedArticleId;
             articleDiv.prepend(articlePrice);
             articleDiv.appendChild(articleName);
 

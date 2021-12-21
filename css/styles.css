@@ -48,13 +48,13 @@ footer {
     text-align: left;
 }
 
-.return-product-unfocused {
+.return-product-button {
     margin-top: 8px;
     color: white;
     background-color: indianred;
 }
 
-.return-product-unfocused {
+.return-product-button {
     margin-top: 8px;
     color: white;
     background-color: darkred;
